@@ -1,0 +1,98 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="helpCenter easyui-layout">
+	<div class="helpCenter-title" >
+		<ul class="list-inline list-unstyled">
+			<li class="activeHelp order-li">
+				<a href="javascript:void(0);" >业绩查询</a>
+			</li>
+		</ul>
+	</div>
+		<div id="testa" style="display:inline;padding-top:17px;" >
+		<!-- 这里的padding-top是让搜索栏向下点，也就是与"添加"等按钮对齐，但在HTML里面不好用，在jsp页面中已测试可用 -->
+		<div style="display:inline" data-options="region:'north'">
+			<div style="float:left;">
+  					<input id="sss" class="easyui-searchbox" style="float:left;width:310px;" searcher="qq" prompt="请输入查询内容"></input>
+  				</div>
+  				<div style="float:left;width:500px">
+  					<div id="mm"></div>
+  					<span>按时间段查询：
+  						<input id="dt1" type="text" name="date1"></input>
+  						<input id="dt2" type="text" name="date2"></input>
+  						<a id="btn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'">查询</a>
+  					</span>
+  				</div>
+  		</div>
+  		</div>
+		<!--表格-->
+		<div id="testa" style="display:inline;padding-top:17px;" >
+		<div style="width:810px;float:left;" data-options="region:'center'">
+			<table id="depc"></table>
+		</div>
+		</div>
+	
+</div> 
+<script>
+$(function() {
+	$("#depc").datagrid({
+		url : "<?php echo U('DepCenter/index');?>",
+		fitColumns : true,
+		fit	: false,
+		striped : true,
+		border : false,
+		pagination : true,
+		pageSize : 20,
+		fitColumns : true,
+		pageList : [ 10, 20, 50 ],
+		pageNumber : 1,
+		sortName : 'user_id',
+		sortOrder : 'desc',
+		singleSelect : true,
+		columns : [[
+            {field : 'reg_time',title : '时间',width : 135,sortable:true},
+            {field : 'user_code',title : '业务员编号',width : 100,sortable:true},
+            {field : 'user_name',title : '业务员姓名',width : 100,sortable:true},
+            {field : 'mobile_phone',title : '手机',width : 150,sortable:true},
+            {field : 'sale_money',title : '销售业绩',width : 130,sortable:true},
+            {field : 'sum_custom',title : '客户数量',width : 130,sortable:true},
+            {field : 'user',title : '其它',width : 100,sortable:true},
+
+		]]
+	});
+	$('#dt1').datetimebox({   
+	    value: '2016/01/29',   
+	    required: true,   
+	    showSeconds: false  
+	}); 
+	$('#dt2').datetimebox({
+	    value: '2016/01/29',   
+	    required: true,   
+	    showSeconds: false  
+	});
+	
+	$('#btn').click(function(){
+		var dt1=$('#dt1').datetimebox('getValue');
+		var dt2=$('#dt2').datetimebox('getValue');
+		$.post("<?php echo U('DepCenter/index');?>",
+				{
+					date1:dt1,
+					date2:dt2,
+				},
+				function(data){
+					if (data) { $("#depc").datagrid('loadData', data) }; 
+		})
+	})
+})
+	//循环列名，生成搜索的下拉列表
+    var fields =  $('#depc').datagrid('getColumnFields');
+    var muit="";
+    for(var i=0; i<fields.length; i++){
+        var opts = $('#depc').datagrid('getColumnOption', fields[i]);  
+        muit += "<div name='"+  fields[i] +"'>"+ opts.title +"</div>";
+    };
+    $('#mm').html($('#mm').html()+muit);
+    $('#sss').searchbox({  
+       menu:'#mm'
+   });
+function qq(value,name){
+    $('#depc').datagrid('load', { "searchKey": name, "searchValue": value }); 
+}
+</script>

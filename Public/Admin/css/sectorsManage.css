@@ -1,0 +1,30 @@
+.sectors-table>.table>tbody>tr>th,.sectors-table>.table>tbody>tr>td{
+	width: 238px !important; 
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.amway{
+	width: 930px;
+	height: 80px;
+	padding-top: 30px;
+}
+.amway-day{
+	padding-top: 0px !important;
+	height: 30px;
+}
+.salesmanNo{
+	width: 312px;
+	height: 32px;
+	padding-left: 20px;
+}
+.salesmanNo>form>label{
+	height: 28px;
+	line-height: 28px;
+}
+.salesmanBtn{
+	margin-left: 10px;
+}

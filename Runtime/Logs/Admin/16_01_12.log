@@ -1,0 +1,1127 @@
+[ 2016-01-12T16:45:52+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=DepCenter&a=index&_=1452580763743
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.016684s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016782s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+ERR: 1146:Table 'xiaojd.ecs_dep_center' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ecs_dep_center`
+ERR: 1146:Table 'xiaojd.ecs_dep_center' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ecs_dep_center`
+
+[ 2016-01-12T16:46:17+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=User&a=index&_=1452580763744
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014848s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2016-01-12T16:46:18+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.013832s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013921s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0025s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0058s ]
+NOTIC: [8] Undefined index: s_user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 116 行.
+NOTIC: [8] Undefined index: s_user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 120 行.
+NOTIC: [8] Undefined index: s_status E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 124 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ecs_users` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ecs_users` ORDER BY user_id desc LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006065s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.021269s ]
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+
+[ 2016-01-12T16:46:18+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Function&a=get_config&cname=USER_STATUS_TYPE|type|title&r_type=json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0024s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014084s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014181s ]
+
+[ 2016-01-12T16:46:24+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=User&a=index&_=1452580763745
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0022s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.022666s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022780s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0023s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-01-12T16:46:24+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0056s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.031883s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.031965s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0034s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0022s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: s_user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 116 行.
+NOTIC: [8] Undefined index: s_user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 120 行.
+NOTIC: [8] Undefined index: s_status E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 124 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ecs_users` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ecs_users` ORDER BY user_id desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001582s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.014775s ]
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+NOTIC: [8] Undefined index: user_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_code E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: aite_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: email E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_name E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: sex E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: birthday E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: frozen_money E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: pay_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: rank_points E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: address_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: reg_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_login E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_time E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: last_ip E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: visit_count E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: user_rank E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_special E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: ec_salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: salt E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: parent_id E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: flag E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: alias E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: msn E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: qq E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: office_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: home_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mobile_phone E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: is_validated E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: credit_line E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_question E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: passwd_answer E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediauid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: froms E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: role_range E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: img E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] A non well formed numeric value encountered E:\wamp\www\ywy\App\Admin\Controller\UserController.class.php 第 68 行.
+
+[ 2016-01-12T16:46:24+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Function&a=get_config&cname=USER_STATUS_TYPE|type|title&r_type=json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0041s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.030132s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.030231s ]
+
+[ 2016-01-12T16:46:31+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Index&a=menu&pid=79
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.021929s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022011s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`type`,`show_type`,`icon` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `hide` = 0 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-01-12T16:46:32+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=UserCenter&a=index&_=1452580763746
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001677s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.023115s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023210s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0022s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `ecs_users` WHERE ( user_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-01-12T16:51:13+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014541s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014645s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`type`,`show_type`,`icon` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `hide` = 0 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `ecs_users` WHERE ( user_id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ AdminIndex ] --START--
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016943s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.015929s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.016005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-01-12T16:51:13+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Index&a=menu&pid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0026s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.016965s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017188s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0047s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`type`,`show_type`,`icon` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `hide` = 0 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-01-12T16:51:14+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Index&a=menu&pid=79
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.024148s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.024235s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`type`,`show_type`,`icon` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `hide` = 0 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2016-01-12T16:51:15+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=UserCenter&a=index&_=1452588673603
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0022s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.024081s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.024162s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `ecs_users` WHERE ( user_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2016-01-12T16:51:16+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=UserCenter&a=index&_=1452588673604
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0024s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014796s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014895s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `ecs_users` WHERE ( user_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-01-12T17:37:08+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.1176s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0404s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.222704s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.222801s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0507s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`type`,`show_type`,`icon` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `hide` = 0 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ecs_users` WHERE ( user_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ AdminIndex ] --START--
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.102628s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.101498s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.101578s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2016-01-12T17:37:11+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Index&a=menu&pid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0471s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.062491s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.062575s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`type`,`show_type`,`icon` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `hide` = 0 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2016-01-12T17:37:13+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Index&a=menu&pid=79
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0025s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014356s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014439s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`type`,`show_type`,`icon` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `hide` = 0 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-01-12T17:37:14+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=UserCenter&a=index&_=1452591430624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014119s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014223s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `ecs_users` WHERE ( user_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2016-01-12T17:47:18+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=Index&a=menu&pid=79
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0027s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014645s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014728s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0023s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`type`,`show_type`,`icon` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `hide` = 0 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-01-12T17:47:19+08:00 ] 127.0.0.1 /ywy/index.php?m=Admin&c=UserCenter&a=index&_=1452591774805
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `ecs_hooks` [ RunTime:0.0027s ]
+SQL: SELECT `name`,`addons` FROM `ecs_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_addons` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name` FROM `ecs_addons` WHERE `status` = 1 AND `name` IN ('SiteStat')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.022757s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022837s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ecs_auth_group_access a INNER JOIN ecs_auth_group g on a.group_id=g.id  WHERE ( a.uid='2' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ecs_auth_rule` [ RunTime:0.0022s ]
+SQL: SELECT `condition`,`name` FROM `ecs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','113') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ecs_users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `ecs_users` WHERE ( user_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+

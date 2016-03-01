@@ -1,0 +1,115 @@
+<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+	<tr>
+		<th>业务员姓名 : </th>
+		<td><input name="user_name" type="text" class="easyui-textbox" style="height:30px;" value="{$_info["user_name"]}" data-options="required:false"></td>
+	</tr><tr>
+		<th>业务员代码 : </th>
+		<td><input name="user_code" type="text" class="easyui-textbox" style="height:30px;" value="{$_info["user_code"]}" data-options="required:false" disabled></td>
+	</tr><tr>
+		<th>密码 : </th>
+		<td><input name="password" type="password" class="easyui-textbox" style="height:30px;" value="{$_info["password"]}" data-options="required:false"></td>
+	</tr><!-- <tr>
+		<th>邮箱 : </th>
+		<td><input name="email" type="text" class="easyui-textbox" style="height:30px;" value="{$_info["email"]}" data-options="required:false"></td>
+	</tr> --><tr>
+		<th>手机 : </th>
+		<td><input name="mobile_phone" type="text" class="easyui-textbox" style="height:30px;" value="{$_info["mobile_phone"]}" data-options="required:false"></td>
+	</tr></table>
+<input name="order_id" type="hidden" value="{:I('get.order_id')}" />
+
+
+<!-- <div class="standMessage tabToggleOrder">
+	<div class="messages">
+		<div class="tc-15-calendar-select">
+			<p class="Orderdetail">订单详情 >></p>
+		</div>
+		<div class="details-table">
+		<volist name="order" id="orders">
+			<table class="table table-bordered">
+				<tr>
+					<td class="serialNumber">订单编号</td>
+					<td class="orderNum">{$orders['order_sn']}</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">收货人姓名</td>
+					<td class="orderNum">{$orders.consignee}</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">手机号码</td>
+					<td class="orderNum">{$orders.mobile}</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">收货地址</td>
+					<td class="orderNum">天目中路585号新梅大厦12H</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">邮政编码</td>
+					<td class="orderNum">20002</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">支付方式</td>
+					<td class="orderNum">在线支付</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">付款状态</td>
+					<td class="orderNum">{$orders.pay_status}</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">配送方式</td>
+					<td class="orderNum">{$orders.shipping_name}</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">发货状态</td>
+					<td class="orderNum">已发货</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">订单状态</td>
+					<td class="orderNum">订单确认</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">下单时间</td>
+					<td class="orderNum">2015-11-11 19：12：00</td>
+				</tr>
+				<tr>
+					<td class="serialNumber">订单备注</td>
+					<td class="orderNum">协助处理</td>
+				</tr>
+			</table>
+			</volist>
+		</div>
+		<div class="goodsDetails">
+			<div class="details-title">
+				<div class="title-left">
+					<h2>商品详情</h2>
+				</div>
+				<div class="detailsPrice">
+					<h2>单价（元）</h2>
+				</div>
+			</div>
+			<div class="details-products">
+				<div>
+					<div class="details-img">
+						<img src="saleImgs/details01.jpg" />
+					</div>
+					<div class="details-information">
+						<p>
+							<span>商品ID：</span> <span>201412091</span>
+						</p>
+						<p>
+							<span>商品信息：</span> <span>iphone5s</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span>黄色64G</span>&nbsp;&nbsp;&nbsp;&nbsp; <span>联通合约机</span>
+						</p>
+						<p>
+							<span>数量：</span> <span>2</span>
+						</p>
+					</div>
+				</div>
+				<div class="Prices">
+					<h2>4800.00</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+<!-- <script src="__PUBLIC__/Admin/js/daterangepicker.js"></script> -->
+<!-- <script src="__PUBLIC__/Admin/js/salesCenter.js"></script> -->

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+    <tr>
+			<th>业务员姓名 : </th>
+			<td><input name="user_name" type="text" class="easyui-textbox" style="height:30px;"></td>
+	</tr>
+	<tr>
+			<th>业务员代码: </th>
+			<td><input name="user_code" type="text" class="easyui-textbox" style="height:30px;"></td>
+	</tr>
+	<tr>
+			<th>上次登录时间 : </th>
+			<td><input name="s_last_login_time_min" type="text" class="easyui-datebox" style="height:30px;"> - <input name="s_last_login_time_max" type="text" class="easyui-datebox" style="height:30px;"></td>
+	</tr>
+	<tr>
+			<th>上次登录IP : </th>
+			<td><input name="s_last_login_ip" type="text" class="easyui-textbox" style="height:30px;"></td>
+	</tr>
+	<tr>
+			<th>邮箱 : </th>
+			<td><input name="s_email" type="text" class="easyui-textbox" style="height:30px;"></td>
+	</tr>
+	<tr>
+			<th>备注 : </th>
+			<td><input name="s_remark" type="text" class="easyui-textbox" style="height:30px;"></td>
+	</tr>
+	<tr>
+			<th>创建时间 : </th>
+			<td><input name="s_create_time_min" type="text" class="easyui-datebox" style="height:30px;"> - <input name="s_create_time_max" type="text" class="easyui-datebox" style="height:30px;"></td>
+	</tr>
+	<tr>
+			<th>更新时间 : </th>
+			<td><input name="s_update_time_min" type="text" class="easyui-datebox" style="height:30px;"> - <input name="s_update_time_max" type="text" class="easyui-datebox" style="height:30px;"></td>
+	</tr>
+	<tr>
+			<th>角色 : </th>
+			<td><select name="s_status" class="easyui-combobox" style="height:30px;" data-options="value:'',url:'{:U("Admin/Function/get_config")}&cname=USER_STATUS_TYPE|type|title&r_type=json',valueField:'type',textField:'title',multiple:false,required:false,editable:false"></select></td>
+	</tr>
+	
+</table>
+</body>
+</html>

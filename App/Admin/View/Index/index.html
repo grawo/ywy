@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理控制台 | {:C('GMS_NAME')}</title>
+<link href="__IMG__/favicon.ico" mce_href="__IMG__/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="__IMG__/favicon.ico" mce_href="__IMG__/favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="__IMG__/favicon.ico" mce_href="__IMG__/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+<link rel="stylesheet" type="text/css" href="__STATIC__/Easyui/themes/metro/easyui.css">
+<link rel="stylesheet" href="__STATIC__/Font/iconfont.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/Easyui/themes/color.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/Easyui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/Easyui/themes/demo.css">
+<link rel="stylesheet" href="__STATIC__/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="__STATIC__/kindeditor/themes/simple/simple.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/main.css">
+<script type="text/javascript" src="__STATIC__/Jquery/jquery.min.js"></script>
+<script type="text/javascript" src="__STATIC__/Easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__STATIC__/Easyui/locale/easyui-lang-zh_CN.js"></script>
+<script charset="utf-8" src="__STATIC__/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="__STATIC__/kindeditor/lang/zh_CN.js"></script>
+<script charset="utf-8" src="__STATIC__/Echarts/echarts.js"></script>
+<script type="text/javascript" src="__JS__/main.js"></script>
+
+<!-- 部门管理bootstrap  彬彬-->
+
+<script type="text/javascript" src="__JS__/moment.js"></script>
+<script type="text/javascript" src="__JS__/daterangepicker.js"></script>
+<!-- <script type="text/javascript" src="__JS__/salesCenter.js"></script> -->
+<!-- <script type="text/javascript" src="__JS__/bootstrap.min.js"></script> -->
+
+<!-- <link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css"> -->
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/daterangepicker.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/topLeft.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/sectorsManage.css">
+
+<script>
+var ke_pasteType=2;
+var ke_fileManagerJson="{:U('Admin/FilesUpdata/filemanager')}";
+var ke_uploadJson="{:U('Admin/FilesUpdata/upload')}";
+var ke_Uid='{:session(C("AUTH_KEY"));}';
+var Root='__ROOT__';
+</script>
+</head>
+<body class="easyui-layout" id="Main_Layout_Box">
+<div id="Main_Layout_North" data-options="region:'north',split:false">
+  <div id="header_logo"> 
+  		<a href="{:U('Admin/Index/index')}">
+  		{:C('GMS_NAME')}
+  		</a> 
+  		<i class="opacity-80">
+  		v1.1</i> 
+  		<a class="justify" href="javascript:void(0);"></a></div>
+  <ul id="header_nav" class="header_nav">
+    <volist name="AdminMenu" id="v"> 
+    <a href="JavaScript:void(0);" onclick="
+    			<if condition="$v['show_type'] eq 0 ">
+    				G_Ajax(this,'ul','Main_Layout_West','{:U('Index/menu',array('pid'=>$v['id']))}')
+    			<else/>
+    				G_Dialog(this,'Dialog_Main_{$v['id']}','{$v['url']}')
+    			</if>
+    		">
+    		<li>
+    			{$v['title']}
+    		</li>
+    </a>
+    </volist>
+  </ul>
+  <ul class="header_nav" style="float:right">
+    <a href="#"><li id="inuser">{$UserInfo['user_name']}</li></a>
+    <a href="{:U('Index/cache')}"><li>缓存更新</li></a>
+    <a href="{:U('Public/logout')}"><li>退出</li></a>
+  </ul>
+</div>
+<div id="Main_Layout_South" data-options="region:'south',split:false">Powered by <a href="{:C('GMS_SITE')}" style="color:#666">{:C('GMS_NAME')} v {:C('GMS_VERSION')}</a> | Copyright © <a href="{:C('GMS_AUTHOR_SITE')}" style="color:#666">{:C('GMS_AUTHOR')}</a> All rights reserved.</div>
+<div id="Main_Layout_West" data-options="region:'west',split:false"></div>
+<div id="Main_Layout_Center" data-options="region:'center',split:false" style="padding:5px;">
+  <div id="MainTabs" class="easyui-tabs" data-options="fit:true,border:false">
+    <div title="控制台" data-options="closable:false,id:-1,iconCls:'iconfont icon-all',bodyCls:'tabs_box'" style="padding: 5px;">
+	<!-- {:hook('AdminIndex')} -->
+    <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+    <tr><th>业务员头像 : </th>
+    	<td>
+    		<div>
+    		<img src="./Uploads/{$list.img}" width="100px" height="100px"></img>
+    		</div>
+    	</td>
+	</tr>
+    <tr><th>业务员编号 : </th>
+		<td>{$list.user_code}</td>
+	</tr>
+	<tr><th>用户名 : </th>
+		<td>{$list.user_name}</td>
+	</tr><tr>
+		<th>性别 : </th>
+		<td><if condition="$list.user_name eq 0" >男
+		<elseif condition="$list.user_name eq 1"/>女
+		<else />
+		</if></td>
+	</tr><tr>
+		<th>手机号 : </th>
+		<td>{$list.mobile_phone}</td>
+	</tr><tr>
+		<th>角色 : </th>
+		<td>
+		<if condition="$list.role_range eq 1" >业务员
+		<elseif condition="$list.role_range eq 2"/>门店店主
+		<elseif condition="$list.role_range eq 3"/>供应商
+		<elseif condition="$list.role_range eq 4"/>兼职业务员
+		<else />
+		</if>
+		</td>
+	</tr><tr>
+		<th>最后一次登陆 : </th>
+		<td>{$list.last_login}</td>
+	</tr></table>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+<script>
+$(document).ready(function(){
+	G_Ajax(this,'ul','Main_Layout_West','{:U("Index/menu",array("pid"=>1))}');
+})
+
+</script>

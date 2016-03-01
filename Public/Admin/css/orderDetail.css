@@ -1,0 +1,110 @@
+.Orderdetail{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #333333;
+}
+.details-table{
+	height: 660px;
+}
+.serialNumber{
+	width: 143px;
+	height: 45px;
+	line-height: 45px !important;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #999999;
+	overflow: hidden;
+}
+.table-bordered>tbody>tr>td{
+	border: 1px solid #ffd7d7;
+}
+.orderNum{
+	width: 1518px;
+	line-height: 45px !important;
+	padding-left: 20px !important;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #333333;
+	overflow: hidden;
+}
+.goodsDetails{
+	height: 170px;
+	border: 1px solid #ffd7d7;
+}
+.details-title{
+	height: 35px;
+	border-bottom: 1px solid #ffd7d7;
+	padding-left: 40px;
+	line-height: 35px !important;
+}
+.title-left,.title-left h2,.detailsPrice h2{
+	float: left;
+	width: 512px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #333333;
+	font-weight: bold !important;
+	height: 35px;
+	line-height: 35px !important;
+}
+.detailsPrice,.detailsPrice h2{
+	float: right;
+	width: 170px !important;
+	text-align: center;
+}
+.details-products{
+	height: 134px;
+	padding-top: 18px;
+	padding-left: 40px;
+}
+.details-img{
+	float: left;
+}
+.details-information{
+	float: left;
+	padding-top: 18px;
+	padding-left: 30px;
+}
+.details-information p{
+	padding-bottom: 5px;
+}
+.details-information p span{
+	font-family: '宋体';
+	font-size: 14px;
+	color: #666666;
+}
+.details-information p>span:first-child{
+	font-family: '宋体';
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+}
+.Prices{
+	float: right;
+	width: 170px;
+}
+.Prices>h2{
+	height: 110px;
+	line-height: 110px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

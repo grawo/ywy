@@ -1,0 +1,63 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="mainDiv" style="display: block;">
+	    <div class="mainDiv-top">
+			<h2>选号中心</h2>
+		</div>
+		<div class="helpCenter">
+			<div class="helpCenter-title">
+				<ul class="list-inline list-unstyled">
+					<li class="activeHelp order-li">
+						<a href="javascript:void(0);">号码库</a>
+					</li>
+				</ul>
+			</div>
+                 <div class="xzcs">
+                      <p>选择城市：</p>
+                      <select name="" id="" class="numbers">
+                          <option value="110000">上海</option>
+                          <option value="110000">北京</option>
+                          <option value="110000">广州</option>
+                          <option value="110000">深圳</option>
+                      </select>
+                      <button class="searchImg" style="left: 245px;top:145px;">
+							<img src="../../Public/Admin/images/saleImgs/search01.png"/>
+          			  </button>
+                 </div>
+                <div class="messages">
+				<!--表格-->
+				<div class="allIndent" style="width:800px;">
+					<table id="numselect"></table>
+				</div>
+				
+			</div>
+        </div>
+</div>
+
+<script>
+$(function() {
+	$("#numselect").datagrid({
+		url : "<?php echo U('UserCenter/numselect');?>",
+		fitColumns : true,
+		fit	: false,
+		striped : true,
+		border : false,
+		pagination : true,
+		pageSize : 20,
+		fitColumns : true,
+		pageList : [ 10, 20, 50 ],
+		pageNumber : 1,
+		sortName : 'user_id',
+		sortOrder : 'desc',
+		singleSelect : true,
+		columns : [[
+            {field : 'reg_time',title : '时间',width : 135,sortable:true},
+            {field : 'user_code',title : '业务员编号',width : 100,sortable:true},
+            {field : 'user_name',title : '业务员姓名',width : 100,sortable:true},
+            {field : 'mobile_phone',title : '手机',width : 150,sortable:true},
+            {field : 'sale_money',title : '销售业绩',width : 130,sortable:true},
+            {field : 'sum_custom',title : '客户数量',width : 130,sortable:true},
+            {field : 'user',title : '其它',width : 100,sortable:true},
+
+		]]
+	});
+})
+</script>

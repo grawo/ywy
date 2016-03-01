@@ -1,0 +1,18 @@
+.confirmAdd{
+	width: 90px;
+	height: 25px;
+	border: 1px solid #ffd7d7;
+	border-radius: 3px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #e70012;
+	line-height: 10px;
+	padding-left: 25px;
+	background: url(../images/saleImgs/client02.png) no-repeat 6px 3px;
+}
+.confirmAdd:hover{
+	color: #e70012;
+}
+.confirmAdd:active{
+	background: url(../images/saleImgs/client02.png) no-repeat 6px 3px;
+}
